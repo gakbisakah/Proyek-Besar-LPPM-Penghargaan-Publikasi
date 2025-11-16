@@ -1,18 +1,15 @@
 <?php
 
 return [
-    'api' => [
-        'users_url' => env('API_USERS_URL', 'https://service-users.del.ac.id/api/v1'),
-        'users_username' => env('API_USERS_USERNAME', ''),
-        'users_password' => env('API_USERS_PASSWORD', ''),
-    ],
-
-    'app' => [
-        'name' => env('APP_NAME', 'HRD'),
-        'environment' => env('APP_ENV', 'production'),
-    ],
-
-    'database' => [
-        'default' => env('DB_CONNECTION', 'pgsql'),
-    ],
+    // Version
+    'version' => '2025.11.11',
+    // API
+    'api_users_url' => env('API_USERS_URL', ''),
+    // SSO
+    'sso_client_id' => env('SSO_CLIENT_ID', ''),
+    'sso_client_secret' => env('SSO_CLIENT_SECRET', ''),
+    'sso_token_url' => env('SSO_TOKEN_URL', ''),
+    'sso_authorize_url' => env('SSO_AUTHORIZATION_URL', ''),
+    // FORCE HTTPS
+    'force_https' => env('FORCE_HTTPS', false),
 ];
